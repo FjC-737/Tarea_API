@@ -1,0 +1,33 @@
+
+GET http://localhost:3000/productos
+
+
+GET http://localhost:3000/productos/PROD021
+
+
+GET http://localhost:3000/productos/disponibles
+
+
+POST http://localhost:3000/productos
+Content-Type: application/json
+
+{
+  "id": "PROD021",
+  "nombre": "Producto de prueba",
+  "precio": 100.50,
+  "descripcion": "Descripción del producto de prueba",
+  "disponible": true,
+  "fecha_ingreso": "2025-04-11"
+}
+
+
+PUT http://localhost:3000/productos/PROD005
+Content-Type: application/json
+
+{
+  "nombre": "Producto de prueba actualizado",
+  "precio": 120.99,
+  "descripcion": "Descripción actualizada del producto de prueba
+
+}
+DELETE http://localhost:3000/productos/PROD005
